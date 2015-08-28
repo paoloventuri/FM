@@ -1,0 +1,435 @@
+no module named pyimod03_importers - imported by /usr/local/lib/python3.4/dist-packages/PyInstaller-3.0dev-py3.4.egg/PyInstaller/loader/rthooks/pyi_rth_PIL_Image.py
+no module named _io.BufferedRWPair - imported by _io, io, /home/paolo/Documenti/FM/FantaManager.py
+no module named _io.BufferedRandom - imported by _io, io, /home/paolo/Documenti/FM/FantaManager.py
+no module named _io.TextIOWrapper - imported by _io, io, /home/paolo/Documenti/FM/FantaManager.py
+no module named _io.IncrementalNewlineDecoder - imported by _io, io, /home/paolo/Documenti/FM/FantaManager.py
+no module named _io.BlockingIOError - imported by _io, io, /home/paolo/Documenti/FM/FantaManager.py
+no module named _io.DEFAULT_BUFFER_SIZE - imported by _io, io, /home/paolo/Documenti/FM/FantaManager.py
+no module named _io.open - imported by _io, io, /home/paolo/Documenti/FM/FantaManager.py
+no module named _io.BytesIO - imported by _io, io, /home/paolo/Documenti/FM/FantaManager.py
+no module named _io.UnsupportedOperation - imported by _io, io, /home/paolo/Documenti/FM/FantaManager.py
+no module named _io.FileIO - imported by _io, io, /home/paolo/Documenti/FM/FantaManager.py
+no module named _io.StringIO - imported by _io, io, /home/paolo/Documenti/FM/FantaManager.py
+no module named _io.BufferedReader - imported by _io, io, /home/paolo/Documenti/FM/FantaManager.py
+no module named _io.BufferedWriter - imported by _io, io, /home/paolo/Documenti/FM/FantaManager.py
+no module named time.timezone - imported by time, reportlab.pdfbase.pdfdoc
+no module named _datetime.__doc__ - imported by _datetime, datetime, /home/paolo/Documenti/FM/FantaManager.py
+no module named unicodedata.category - imported by unicodedata, reportlab.platypus.paragraph, reportlab.lib.textsplit
+no module named unicodedata.ucd_3_2_0 - imported by unicodedata, stringprep, encodings.idna, /home/paolo/Documenti/FM/FantaManager.py
+no module named _warnings._defaultaction - imported by _warnings, warnings, /home/paolo/Documenti/FM/FantaManager.py
+no module named _warnings._onceregistry - imported by _warnings, warnings, /home/paolo/Documenti/FM/FantaManager.py
+no module named _warnings.filters - imported by _warnings, warnings, /home/paolo/Documenti/FM/FantaManager.py
+no module named _warnings.warn - imported by _warnings, warnings, /home/paolo/Documenti/FM/FantaManager.py
+no module named _warnings.warn_explicit - imported by _warnings, warnings, /home/paolo/Documenti/FM/FantaManager.py
+no module named threading.current_thread - imported by threading, _threading_local, /home/paolo/Documenti/FM/FantaManager.py
+no module named threading.RLock - imported by threading, _threading_local, bz2, multiprocessing.dummy, /home/paolo/Documenti/FM/FantaManager.py
+no module named sys.platform - imported by sys, reportlab.pdfbase.pdfdoc
+no module named sys.stderr - imported by sys, reportlab.lib.logger, reportlab.pdfbase.pdfdoc
+no module named sys.maxsize - imported by sys, pickle
+no module named sys.version_info - imported by sys, chardet, reportlab.pdfbase.pdfdoc
+no module named sys.modules - imported by sys, dummy_threading, /home/paolo/Documenti/FM/FantaManager.py
+no module named posix._exit - imported by posix, os, /home/paolo/Documenti/FM/FantaManager.py
+no module named posix._have_functions - imported by posix, os, /home/paolo/Documenti/FM/FantaManager.py
+no module named ce - imported by os, /home/paolo/Documenti/FM/FantaManager.py
+no module named ce._exit - imported by ce, os, /home/paolo/Documenti/FM/FantaManager.py
+no module named ce._have_functions - imported by ce, os, /home/paolo/Documenti/FM/FantaManager.py
+no module named os.listdir - imported by os, league_manager, reportlab.lib.utils
+no module named os.remove - imported by os, league_manager
+no module named _collections.deque - imported by _collections, collections, threading, /home/paolo/Documenti/FM/FantaManager.py
+no module named _collections.defaultdict - imported by _collections, collections, /home/paolo/Documenti/FM/FantaManager.py
+no module named collections.ChainMap - imported by collections, string, /home/paolo/Documenti/FM/FantaManager.py
+no module named collections.deque - imported by collections, threading, contextlib, ast, shlex, pydoc, html5lib.tokenizer, queue, /home/paolo/Documenti/FM/FantaManager.py
+no module named collections.OrderedDict - imported by collections, inspect, pprint, enum, email._header_value_parser, unittest.util, html5lib.treewalkers.etree, html5lib.filters.alphabeticalattributes, reportlab.pdfbase.pdfdoc, /home/paolo/Documenti/FM/FantaManager.py
+no module named _opcode.stack_effect - imported by _opcode, opcode, /home/paolo/Documenti/FM/FantaManager.py
+no module named _imp.get_frozen_object - imported by _imp, imp, /home/paolo/Documenti/FM/FantaManager.py
+no module named _imp.init_builtin - imported by _imp, imp, /home/paolo/Documenti/FM/FantaManager.py
+no module named _imp._fix_co_filename - imported by _imp, imp, /home/paolo/Documenti/FM/FantaManager.py
+no module named _imp.is_builtin - imported by _imp, imp, /home/paolo/Documenti/FM/FantaManager.py
+no module named _imp.acquire_lock - imported by _imp, imp, /home/paolo/Documenti/FM/FantaManager.py
+no module named _imp.release_lock - imported by _imp, imp, /home/paolo/Documenti/FM/FantaManager.py
+no module named _imp.is_frozen_package - imported by _imp, imp, /home/paolo/Documenti/FM/FantaManager.py
+no module named _imp.init_frozen - imported by _imp, imp, /home/paolo/Documenti/FM/FantaManager.py
+no module named _imp.is_frozen - imported by _imp, imp, /home/paolo/Documenti/FM/FantaManager.py
+no module named _imp.lock_held - imported by _imp, imp, /home/paolo/Documenti/FM/FantaManager.py
+no module named _imp.load_dynamic - imported by _imp, imp, /home/paolo/Documenti/FM/FantaManager.py
+no module named zipimport.zipimporter - imported by zipimport, pkgutil, reportlab.lib.utils, /home/paolo/Documenti/FM/FantaManager.py
+no module named win32api - imported by platform, /home/paolo/Documenti/FM/FantaManager.py
+no module named win32api.RegQueryValueEx - imported by win32api, platform, /home/paolo/Documenti/FM/FantaManager.py
+no module named win32api.RegOpenKeyEx - imported by win32api, platform, /home/paolo/Documenti/FM/FantaManager.py
+no module named win32api.RegCloseKey - imported by win32api, platform, /home/paolo/Documenti/FM/FantaManager.py
+no module named win32api.GetVersionEx - imported by win32api, platform, /home/paolo/Documenti/FM/FantaManager.py
+no module named win32con - imported by platform, /home/paolo/Documenti/FM/FantaManager.py
+no module named win32con.HKEY_LOCAL_MACHINE - imported by win32con, platform, /home/paolo/Documenti/FM/FantaManager.py
+no module named win32con.VER_NT_WORKSTATION - imported by win32con, platform, /home/paolo/Documenti/FM/FantaManager.py
+no module named win32con.VER_PLATFORM_WIN32_NT - imported by win32con, platform, /home/paolo/Documenti/FM/FantaManager.py
+no module named win32con.VER_PLATFORM_WIN32_WINDOWS - imported by win32con, platform, /home/paolo/Documenti/FM/FantaManager.py
+no module named _scproxy._get_proxy_settings - imported by _scproxy, urllib.request
+no module named _scproxy._get_proxies - imported by _scproxy, urllib.request
+no module named _scproxy - imported by urllib.request
+no module named org.python.core.imp - imported by org.python.core, xml.sax
+no module named java.lang.Exception - imported by java.lang, xml.sax._exceptions
+no module named xml.parsers.expat.ParserCreate - imported by xml.parsers.expat, plistlib, /home/paolo/Documenti/FM/FantaManager.py
+no module named java - imported by platform, java.lang, java.awt, /home/paolo/Documenti/FM/FantaManager.py
+no module named java.lang - imported by platform, xml.sax._exceptions, /home/paolo/Documenti/FM/FantaManager.py
+no module named java.System - imported by java, platform, /home/paolo/Documenti/FM/FantaManager.py
+no module named vms_lib - imported by platform, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.OPENSSL_VERSION_NUMBER - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.OPENSSL_VERSION_INFO - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.OPENSSL_VERSION - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl._SSLContext - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.SSLError - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.SSLZeroReturnError - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.SSLWantReadError - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.SSLSyscallError - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.SSLEOFError - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.SSLWantWriteError - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.CERT_OPTIONAL - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.CERT_NONE - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.CERT_REQUIRED - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.VERIFY_X509_STRICT - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.VERIFY_CRL_CHECK_LEAF - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.VERIFY_CRL_CHECK_CHAIN - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.VERIFY_DEFAULT - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.txt2obj - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.nid2obj - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.RAND_bytes - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.RAND_egd - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.RAND_pseudo_bytes - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.RAND_add - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.RAND_status - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.HAS_SNI - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.HAS_ECDH - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.HAS_NPN - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.PROTOCOL_TLSv1 - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.PROTOCOL_SSLv3 - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.PROTOCOL_SSLv23 - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl._OPENSSL_API_VERSION - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.PROTOCOL_SSLv2 - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.PROTOCOL_TLSv1_1 - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.PROTOCOL_TLSv1_2 - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.enum_crls - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named _ssl.enum_certificates - imported by _ssl, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named winreg - imported by platform, mimetypes, urllib.request, /home/paolo/Documenti/FM/FantaManager.py
+no module named os.urandom - imported by os, random, /home/paolo/Documenti/FM/FantaManager.py
+no module named _hashlib.pbkdf2_hmac - imported by _hashlib, hashlib, /home/paolo/Documenti/FM/FantaManager.py
+no module named hashlib.md5 - imported by hashlib, reportlab.lib.utils, reportlab.pdfbase.pdfdoc
+no module named hashlib.sha512 - imported by hashlib, random, /home/paolo/Documenti/FM/FantaManager.py
+no module named grp.getgrnam - imported by grp, shutil, /home/paolo/Documenti/FM/FantaManager.py
+no module named _sysconfigdata_dm - imported by _sysconfigdata, /home/paolo/Documenti/FM/FantaManager.py
+no module named binascii.a2b_qp - imported by binascii, quopri, /home/paolo/Documenti/FM/FantaManager.py
+no module named binascii.b2a_qp - imported by binascii, quopri, /home/paolo/Documenti/FM/FantaManager.py
+no module named binascii.a2b_base64 - imported by binascii, email.base64mime, /home/paolo/Documenti/FM/FantaManager.py
+no module named binascii.b2a_base64 - imported by binascii, email.base64mime, /home/paolo/Documenti/FM/FantaManager.py
+no module named _lzma._decode_filter_properties - imported by _lzma, lzma, /home/paolo/Documenti/FM/FantaManager.py
+no module named _lzma._encode_filter_properties - imported by _lzma, lzma, /home/paolo/Documenti/FM/FantaManager.py
+no module named nt._exit - imported by nt, os, /home/paolo/Documenti/FM/FantaManager.py
+no module named nt._getvolumepathname - imported by nt, ntpath, /home/paolo/Documenti/FM/FantaManager.py
+no module named nt._getfullpathname - imported by nt, ntpath, /home/paolo/Documenti/FM/FantaManager.py
+no module named nt._getfinalpathname - imported by nt, ntpath, /home/paolo/Documenti/FM/FantaManager.py
+no module named nt._isdir - imported by nt, ntpath, /home/paolo/Documenti/FM/FantaManager.py
+no module named nt._have_functions - imported by nt, os, /home/paolo/Documenti/FM/FantaManager.py
+no module named nt - imported by os, ntpath, shutil, /home/paolo/Documenti/FM/FantaManager.py
+no module named time.monotonic - imported by time, subprocess, threading, queue, /home/paolo/Documenti/FM/FantaManager.py
+no module named time.time - imported by time, subprocess, threading, queue, multiprocessing.managers, multiprocessing.synchronize, /home/paolo/Documenti/FM/FantaManager.py
+no module named msvcrt - imported by subprocess, getpass, multiprocessing.spawn, multiprocessing.popen_spawn_win32, /home/paolo/Documenti/FM/FantaManager.py
+no module named _winapi - imported by subprocess, multiprocessing.reduction, multiprocessing.connection, multiprocessing.heap, multiprocessing.popen_spawn_win32, /home/paolo/Documenti/FM/FantaManager.py
+no module named _winapi.INFINITE - imported by _winapi, multiprocessing.connection
+no module named _winapi.WAIT_TIMEOUT - imported by _winapi, multiprocessing.connection
+no module named _winapi.WAIT_ABANDONED_0 - imported by _winapi, multiprocessing.connection
+no module named _winapi.WAIT_OBJECT_0 - imported by _winapi, multiprocessing.connection
+no module named math.log - imported by math, random, PIL.GimpGradientFile, reportlab.lib.rl_accel, /home/paolo/Documenti/FM/FantaManager.py
+no module named math.exp - imported by math, random, /home/paolo/Documenti/FM/FantaManager.py
+no module named math.pi - imported by math, random, PIL.GimpGradientFile, reportlab.pdfgen.canvas, reportlab.pdfgen.pdfgeom, /home/paolo/Documenti/FM/FantaManager.py
+no module named math.e - imported by math, random, /home/paolo/Documenti/FM/FantaManager.py
+no module named math.ceil - imported by math, random, reportlab.pdfgen.canvas, reportlab.pdfgen.pdfgeom, /home/paolo/Documenti/FM/FantaManager.py
+no module named math.sqrt - imported by math, random, PIL.GimpGradientFile, reportlab.platypus.flowables, /home/paolo/Documenti/FM/FantaManager.py
+no module named math.acos - imported by math, random, /home/paolo/Documenti/FM/FantaManager.py
+no module named math.cos - imported by math, random, reportlab.pdfgen.canvas, reportlab.pdfgen.pdfgeom, /home/paolo/Documenti/FM/FantaManager.py
+no module named math.sin - imported by math, random, PIL.GimpGradientFile, reportlab.pdfgen.canvas, reportlab.pdfgen.pdfgeom, /home/paolo/Documenti/FM/FantaManager.py
+no module named math.tan - imported by math, reportlab.pdfgen.canvas
+no module named _winapi.STARTF_USESTDHANDLES - imported by _winapi, subprocess, /home/paolo/Documenti/FM/FantaManager.py
+no module named _winapi.SW_HIDE - imported by _winapi, subprocess, /home/paolo/Documenti/FM/FantaManager.py
+no module named _winapi.STD_INPUT_HANDLE - imported by _winapi, subprocess, /home/paolo/Documenti/FM/FantaManager.py
+no module named _winapi.CREATE_NEW_PROCESS_GROUP - imported by _winapi, subprocess, /home/paolo/Documenti/FM/FantaManager.py
+no module named _winapi.STD_OUTPUT_HANDLE - imported by _winapi, subprocess, /home/paolo/Documenti/FM/FantaManager.py
+no module named _winapi.CREATE_NEW_CONSOLE - imported by _winapi, subprocess, /home/paolo/Documenti/FM/FantaManager.py
+no module named _winapi.STD_ERROR_HANDLE - imported by _winapi, subprocess, /home/paolo/Documenti/FM/FantaManager.py
+no module named _winapi.STARTF_USESHOWWINDOW - imported by _winapi, subprocess, /home/paolo/Documenti/FM/FantaManager.py
+no module named pwd.getpwnam - imported by pwd, shutil, /home/paolo/Documenti/FM/FantaManager.py
+no module named socket.SOCK_STREAM - imported by socket, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named socket.AF_INET - imported by socket, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named socket.SO_TYPE - imported by socket, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named socket.SOL_SOCKET - imported by socket, ssl, /home/paolo/Documenti/FM/FantaManager.py
+no module named string.uppercase - imported by string, reportlab.lib.utils
+no module named string.letters - imported by string, reportlab.lib.utils
+no module named string.lowercase - imported by string, reportlab.lib.utils
+no module named _collections._count_elements - imported by _collections, collections, /home/paolo/Documenti/FM/FantaManager.py
+no module named itertools.islice - imported by itertools, heapq, threading, reprlib, pickle, lib2to3.fixer_util, /home/paolo/Documenti/FM/FantaManager.py
+no module named itertools.count - imported by itertools, heapq, /home/paolo/Documenti/FM/FantaManager.py
+no module named itertools.tee - imported by itertools, heapq, /home/paolo/Documenti/FM/FantaManager.py
+no module named itertools.starmap - imported by itertools, collections, /home/paolo/Documenti/FM/FantaManager.py
+no module named itertools.chain - imported by itertools, heapq, tokenize, collections, lib2to3.refactor, /home/paolo/Documenti/FM/FantaManager.py
+no module named re.compile - imported by re, _strptime, /home/paolo/Documenti/FM/FantaManager.py
+no module named re.IGNORECASE - imported by re, _strptime, /home/paolo/Documenti/FM/FantaManager.py
+no module named re.escape - imported by re, _strptime, /home/paolo/Documenti/FM/FantaManager.py
+no module named _sre.MAXREPEAT - imported by _sre, sre_constants, sre_parse, sre_compile, /home/paolo/Documenti/FM/FantaManager.py
+no module named itertools.repeat - imported by itertools, tokenize, collections, /home/paolo/Documenti/FM/FantaManager.py
+no module named org - imported by copy, org.python, /home/paolo/Documenti/FM/FantaManager.py
+no module named org.python.core - imported by copy, xml.sax, pickle, /home/paolo/Documenti/FM/FantaManager.py
+no module named org.python.core.PyStringMap - imported by org.python.core, pickle
+no module named org.python - imported by org.python.core
+no module named org.PyStringMap - imported by org, copy, /home/paolo/Documenti/FM/FantaManager.py
+no module named _functools.reduce - imported by _functools, functools, /home/paolo/Documenti/FM/FantaManager.py
+no module named collections.namedtuple - imported by collections, functools, selectors, difflib, inspect, urllib.parse, ssl, unittest.util, doctest, reportlab.pdfbase.rl_codecs, /home/paolo/Documenti/FM/FantaManager.py
+no module named _weakref.CallableProxyType - imported by _weakref, weakref, /home/paolo/Documenti/FM/FantaManager.py
+no module named _weakref.proxy - imported by _weakref, weakref, collections, /home/paolo/Documenti/FM/FantaManager.py
+no module named _weakref.ReferenceType - imported by _weakref, weakref, /home/paolo/Documenti/FM/FantaManager.py
+no module named _weakref.ref - imported by _weakref, _weakrefset, weakref, /home/paolo/Documenti/FM/FantaManager.py
+no module named _weakref.getweakrefcount - imported by _weakref, weakref, /home/paolo/Documenti/FM/FantaManager.py
+no module named _weakref.ProxyType - imported by _weakref, weakref, /home/paolo/Documenti/FM/FantaManager.py
+no module named _weakref.getweakrefs - imported by _weakref, weakref, /home/paolo/Documenti/FM/FantaManager.py
+no module named weakref.ref - imported by weakref, _threading_local, reportlab.rl_config, /home/paolo/Documenti/FM/FantaManager.py
+no module named copy.deepcopy - imported by copy, email.generator, weakref, reportlab.platypus.flowables, reportlab.platypus.paragraph, /home/paolo/Documenti/FM/FantaManager.py
+no module named weakref.WeakKeyDictionary - imported by weakref, functools, /home/paolo/Documenti/FM/FantaManager.py
+no module named _thread.allocate_lock - imported by _thread, _strptime, /home/paolo/Documenti/FM/FantaManager.py
+no module named _thread.stack_size - imported by _thread, threading, /home/paolo/Documenti/FM/FantaManager.py
+no module named _thread._local - imported by _thread, threading, /home/paolo/Documenti/FM/FantaManager.py
+no module named _thread.get_ident - imported by _thread, reprlib, /home/paolo/Documenti/FM/FantaManager.py
+no module named _thread.RLock - imported by _thread, functools, /home/paolo/Documenti/FM/FantaManager.py
+no module named _functools.cmp_to_key - imported by _functools, functools, /home/paolo/Documenti/FM/FantaManager.py
+no module named _functools.partial - imported by _functools, functools, /home/paolo/Documenti/FM/FantaManager.py
+no module named _struct._clearcache - imported by _struct, struct, /home/paolo/Documenti/FM/FantaManager.py
+no module named _struct.__doc__ - imported by _struct, struct, /home/paolo/Documenti/FM/FantaManager.py
+no module named struct.unpack - imported by struct, pickle, PIL._binary, PIL.JpegImagePlugin, reportlab.lib.rl_accel
+no module named struct.pack - imported by struct, pickle, PIL._binary
+no module named struct.calcsize - imported by struct, ctypes
+no module named errno.ENOENT - imported by errno, gettext, /home/paolo/Documenti/FM/FantaManager.py
+no module named builtins.str - imported by builtins, locale, /home/paolo/Documenti/FM/FantaManager.py
+no module named builtins.abs - imported by builtins, operator, /home/paolo/Documenti/FM/FantaManager.py
+no module named _operator._compare_digest - imported by _operator, hmac
+no module named _operator.__doc__ - imported by _operator, operator, /home/paolo/Documenti/FM/FantaManager.py
+no module named _dummy_threading - imported by dummy_threading, /home/paolo/Documenti/FM/FantaManager.py
+no module named _dummy_threading.__all__ - imported by _dummy_threading, dummy_threading, /home/paolo/Documenti/FM/FantaManager.py
+no module named dummy_threading.RLock - imported by dummy_threading, bz2, /home/paolo/Documenti/FM/FantaManager.py
+no module named _bz2.BZ2Decompressor - imported by _bz2, bz2, /home/paolo/Documenti/FM/FantaManager.py
+no module named _bz2.BZ2Compressor - imported by _bz2, bz2, /home/paolo/Documenti/FM/FantaManager.py
+no module named reportlab.rl_config.baseUnderlineProportion - imported by reportlab.rl_config, reportlab.lib.styles
+no module named reportlab.rl_config.canvas_basefontname - imported by reportlab.rl_config, reportlab.lib.styles
+no module named reportlab.rl_config.rtlSupport - imported by reportlab.rl_config, reportlab.pdfgen.textobject
+no module named reportlab.rl_config.defaultPageSize - imported by reportlab.rl_config, reportlab.platypus.doctemplate
+no module named reportlab.rl_config.verbose - imported by reportlab.rl_config, reportlab.platypus.doctemplate, reportlab.lib.pdfencrypt
+no module named reportlab.rl_config.decimalSymbol - imported by reportlab.rl_config, reportlab.platypus.paragraph
+no module named reportlab.rl_config.paraFontSizeHeightOffset - imported by reportlab.rl_config, reportlab.platypus.paragraph
+no module named reportlab.rl_config.platypus_link_underline - imported by reportlab.rl_config, reportlab.platypus.paragraph
+no module named reportlab.rl_config.overlapAttachedSpace - imported by reportlab.rl_config, reportlab.platypus.flowables
+no module named reportlab.rl_config._FUZZ - imported by reportlab.rl_config, reportlab.platypus.flowables, reportlab.lib.textsplit, reportlab.platypus.paragraph
+no module named reportlab.rl_config.listWrapOnFakeWidth - imported by reportlab.rl_config, reportlab.platypus.flowables
+no module named reportlab.rl_config.ignoreContainerActions - imported by reportlab.rl_config, reportlab.platypus.flowables
+no module named reportlab.rl_config.fsEncodings - imported by reportlab.rl_config, reportlab.lib.utils
+no module named reportlab.rl_config.defaultEncoding - imported by reportlab.rl_config, reportlab.pdfbase.pdfmetrics
+no module named reportlab.rl_config.T1SearchPath - imported by reportlab.rl_config, reportlab.pdfbase._fontdata, reportlab.pdfbase.pdfmetrics
+no module named reportlab.rl_config.imageReaderFlags - imported by reportlab.rl_config, reportlab.lib.utils
+no module named reportlab.rl_config.ZLIB_WARNINGS - imported by reportlab.rl_config, reportlab.lib.utils
+no module named reportlab_mods - imported by reportlab
+no module named reportlab.local_rl_mods - imported by reportlab
+no module named __builtin__ - imported by reportlab, reportlab.lib.utils, PIL.Image
+no module named future_builtins.ascii - imported by future_builtins, reportlab
+no module named future_builtins - imported by reportlab
+no module named reportlab.lib.utils.rl_isdir - imported by reportlab.lib.utils, reportlab.rl_config, reportlab.pdfbase.pdfmetrics
+no module named reportlab.lib.utils.rl_exec - imported by reportlab.lib.utils, reportlab.rl_config
+no module named reportlab.lib.colors.CMYKColor - imported by reportlab.lib.colors, reportlab.pdfbase.pdfdoc, reportlab.pdfgen.textobject, reportlab.pdfgen.canvas
+no module named reportlab.pdfbase.pdfutils._wrap - imported by reportlab.pdfbase.pdfutils, reportlab.pdfbase.pdfdoc
+no module named reportlab.lib.rl_accel.asciiBase85Encode - imported by reportlab.lib.rl_accel, reportlab.pdfbase.pdfutils, reportlab.pdfbase.pdfdoc, reportlab.pdfgen.pdfimages
+no module named reportlab.lib.rl_accel.escapePDF - imported by reportlab.lib.rl_accel, reportlab.pdfbase.pdfdoc, reportlab.pdfgen.canvas
+no module named reportlab.lib.rl_accel.fp_str - imported by reportlab.lib.rl_accel, reportlab.pdfbase.pdfdoc, reportlab.lib.colors, reportlab.platypus.flowables, reportlab.pdfgen.textobject, reportlab.pdfgen.pathobject, reportlab.pdfgen.canvas, reportlab.pdfgen.pdfimages, reportlab.platypus.tables
+no module named reportlab.lib.rl_accel.asciiBase85Decode - imported by reportlab.lib.rl_accel, reportlab.pdfbase.pdfutils, reportlab.pdfbase.pdfdoc
+no module named reportlab.pdfbase.pdfmetrics.standardEncodings - imported by reportlab.pdfbase.pdfmetrics, reportlab.pdfbase.rl_codecs
+no module named reportlab.lib.rl_accel.unicode2T1 - imported by reportlab.lib.rl_accel, reportlab.pdfbase.pdfmetrics
+no module named reportlab.lib.rl_accel.instanceStringWidthT1 - imported by reportlab.lib.rl_accel, reportlab.pdfbase.pdfmetrics
+no module named java.awt.image.PixelGrabber - imported by java.awt.image, reportlab.lib.utils
+no module named jarray - imported by reportlab.lib.utils
+no module named javax.imageio.ImageIO - imported by javax.imageio, reportlab.lib.utils
+no module named javax.imageio - imported by reportlab.lib.utils
+no module named reportlab.lib.utils.markfilename - imported by reportlab.lib.utils, reportlab.pdfbase.pdfdoc
+no module named reportlab.lib.utils.findInPaths - imported by reportlab.lib.utils, reportlab.pdfbase.pdfmetrics
+no module named reportlab.lib.utils.rl_glob - imported by reportlab.lib.utils, reportlab.pdfbase.pdfmetrics
+no module named reportlab.lib.utils.open_and_read - imported by reportlab.lib.utils, reportlab.pdfbase.pdfmetrics
+no module named reportlab.lib.utils.open_and_readlines - imported by reportlab.lib.utils, reportlab.pdfbase.pdfmetrics
+no module named reportlab.lib.utils.rl_isfile - imported by reportlab.lib.utils, reportlab.pdfbase._fontdata, reportlab.pdfbase.pdfmetrics
+no module named reportlab.lib.utils._digester - imported by reportlab.lib.utils, reportlab.pdfbase.pdfdoc, reportlab.pdfgen.canvas
+no module named reportlab.lib.utils.isStr - imported by reportlab.lib.utils, reportlab.pdfbase.pdfdoc, reportlab.pdfbase.pdfmetrics, reportlab.lib.colors, reportlab.pdfgen.textobject, reportlab.pdfgen.canvas, reportlab.pdfgen.pdfimages, reportlab.platypus.tables
+no module named reportlab.lib.utils.annotateException - imported by reportlab.lib.utils, reportlab.pdfbase.pdfdoc, reportlab.platypus.paraparser, reportlab.platypus.doctemplate, reportlab.platypus.tables
+no module named reportlab.lib.utils.isSeq - imported by reportlab.lib.utils, reportlab.pdfbase.pdfdoc, reportlab.pdfbase.pdfmetrics, reportlab.lib.rl_accel, reportlab.pdfgen.canvas, reportlab.platypus.doctemplate, reportlab.platypus.xpreformatted
+no module named reportlab.lib.utils.makeFileName - imported by reportlab.lib.utils, reportlab.pdfbase.pdfdoc
+no module named reportlab.lib.utils.isBytes - imported by reportlab.lib.utils, reportlab.pdfbase.pdfdoc, reportlab.lib.rl_accel, reportlab.platypus.paragraph, reportlab.pdfgen.textobject
+no module named reportlab.lib.utils.import_zlib - imported by reportlab.lib.utils, reportlab.pdfbase.pdfdoc, reportlab.pdfgen.canvas, reportlab.pdfgen.pdfimages
+no module named reportlab.lib.utils.bytestr - imported by reportlab.lib.utils, reportlab.pdfbase.pdfdoc
+no module named reportlab.lib.utils.open_for_read - imported by reportlab.lib.utils, reportlab.pdfbase.pdfutils, reportlab.pdfbase.pdfdoc, reportlab.platypus.flowables
+no module named reportlab.lib.utils.isUnicode - imported by reportlab.lib.utils, reportlab.pdfbase.pdfutils, reportlab.pdfbase.pdfdoc, reportlab.pdfbase.pdfmetrics, reportlab.lib.rl_accel, reportlab.lib.textsplit, reportlab.pdfgen.canvas, reportlab.lib.arciv
+no module named reportlab.lib.utils.isPy3 - imported by reportlab.lib.utils, reportlab.pdfbase.pdfutils, reportlab.pdfbase.pdfdoc, reportlab.pdfbase.pdfmetrics, reportlab.lib.rl_accel, reportlab.platypus.paraparser, reportlab.lib.pdfencrypt, reportlab.lib.arciv
+no module named reportlab.lib.utils.ImageReader - imported by reportlab.lib.utils, reportlab.pdfbase.pdfutils, reportlab.platypus.flowables, reportlab.platypus.paraparser, reportlab.pdfgen.canvas
+no module named reportlab.lib.utils.getBytesIO - imported by reportlab.lib.utils, reportlab.pdfbase.pdfutils, reportlab.lib.pdfencrypt, reportlab.pdfgen.pdfimages
+no module named rl_config.register_reset - imported by rl_config, reportlab.lib.utils
+no module named rl_config - imported by reportlab.lib.utils
+no module named urllib2 - imported by reportlab.lib.utils
+no module named reportlab.lib.pyHnj.Hyphen - imported by reportlab.lib.pyHnj, reportlab.lib.utils
+no module named reportlab.lib.pyHnj - imported by reportlab.lib.utils
+no module named Image - imported by reportlab.lib.utils
+no module named PySide.QtCore.QIODevice - imported by PySide.QtCore, PIL.ImageQt
+no module named PySide.QtCore.QBuffer - imported by PySide.QtCore, PIL.ImageQt
+no module named PySide.QtCore - imported by PIL.ImageQt
+no module named PySide.qRgba - imported by PySide, PIL.ImageQt
+no module named PySide.QPixmap - imported by PySide, PIL.ImageQt
+no module named PySide.QImage - imported by PySide, PIL.ImageQt
+no module named PySide.QtGui - imported by PIL.ImageQt
+no module named PySide - imported by PIL.ImageQt, PySide.QtGui, PySide.QtCore
+no module named PyQt4.QtCore.QIODevice - imported by PyQt4.QtCore, PIL.ImageQt
+no module named PyQt4.QtCore.QBuffer - imported by PyQt4.QtCore, PIL.ImageQt
+no module named PyQt4.QtCore - imported by PIL.ImageQt
+no module named PyQt4.qRgba - imported by PyQt4, PIL.ImageQt
+no module named PyQt4.QPixmap - imported by PyQt4, PIL.ImageQt
+no module named PyQt4.QImage - imported by PyQt4, PIL.ImageQt
+no module named PyQt4.QtGui - imported by PIL.ImageQt
+no module named PyQt4 - imported by PIL.ImageQt, PyQt4.QtGui, PyQt4.QtCore
+no module named PyQt5.QtCore.QIODevice - imported by PyQt5.QtCore, PIL.ImageQt
+no module named PyQt5.QtCore.QBuffer - imported by PyQt5.QtCore, PIL.ImageQt
+no module named PyQt5.QtCore - imported by PIL.ImageQt
+no module named PyQt5.qRgba - imported by PyQt5, PIL.ImageQt
+no module named PyQt5.QPixmap - imported by PyQt5, PIL.ImageQt
+no module named PyQt5.QImage - imported by PyQt5, PIL.ImageQt
+no module named PyQt5.QtGui - imported by PIL.ImageQt
+no module named PyQt5 - imported by PIL.ImageQt, PyQt5.QtGui, PyQt5.QtCore
+no module named cffi.FFI - imported by cffi, PIL.PyAccess
+no module named _imaging_gif - imported by PIL.GifImagePlugin
+no module named cffi - imported by PIL.Image, PIL.PyAccess
+no module named java.awt.image - imported by reportlab.lib.utils
+no module named java.awt - imported by java.awt.image
+no module named javax - imported by reportlab.lib.utils, javax.imageio
+no module named macostools - imported by reportlab.lib.utils
+no module named macfs - imported by reportlab.lib.utils
+no module named StringIO.StringIO - imported by StringIO, reportlab.lib.utils
+no module named StringIO - imported by six, reportlab.lib.utils
+no module named md5 - imported by reportlab.lib.utils
+no module named _pickle.dump - imported by _pickle, pickle
+no module named _pickle.load - imported by _pickle, pickle
+no module named _pickle.dumps - imported by _pickle, pickle
+no module named _pickle.PicklingError - imported by _pickle, pickle
+no module named _pickle.PickleError - imported by _pickle, pickle
+no module named _pickle.Pickler - imported by _pickle, pickle
+no module named _pickle.UnpicklingError - imported by _pickle, pickle
+no module named _pickle.Unpickler - imported by _pickle, pickle
+no module named _pickle.loads - imported by _pickle, pickle
+no module named cPickle - imported by reportlab.lib.utils
+no module named cStringIO - imported by cPickle
+no module named copy_reg - imported by cPickle, cStringIO
+no module named reportlab.platypus.doctemplate.SimpleDocTemplate - imported by reportlab.platypus.doctemplate, reportlab.platypus
+no module named sets.Set - imported by sets, reportlab.platypus.doctemplate
+no module named sets - imported by reportlab.platypus.doctemplate
+no module named rlextra.restoreFormsInMemory - imported by rlextra, reportlab.lib.pdfencrypt
+no module named rlextra.storeFormsInMemory - imported by rlextra, reportlab.lib.pdfencrypt
+no module named rlextra.pageCatcher.pageCatcher - imported by reportlab.lib.pdfencrypt
+no module named rlextra.pageCatcher - imported by rlextra.pageCatcher.pageCatcher
+no module named rlextra - imported by reportlab.lib.pdfencrypt, rlextra.pageCatcher
+no module named reportlab.pdfgen.canvas.Canvas - imported by reportlab.pdfgen.canvas, reportlab.lib.pdfencrypt
+no module named pyfribidi2.ON - imported by pyfribidi2, reportlab.pdfgen.textobject
+no module named pyfribidi2.RTL - imported by pyfribidi2, reportlab.pdfgen.textobject
+no module named pyfribidi2.log2vis - imported by pyfribidi2, reportlab.pdfgen.textobject
+no module named pyfribidi2.LTR - imported by pyfribidi2, reportlab.pdfgen.textobject
+no module named pyfribidi2 - imported by reportlab.pdfgen.textobject
+no module named reportlab.platypus.doctemplate.LayoutError - imported by reportlab.platypus.doctemplate, reportlab.platypus.frames, reportlab.platypus.flowables, reportlab.platypus.tables
+no module named tests.old_tables_test - imported by tests, reportlab.platypus.tables
+no module named tests.test_platypus_tables - imported by reportlab.platypus.tables
+no module named tests - imported by reportlab.platypus.tables
+no module named htmlentitydefs.name2codepoint - imported by htmlentitydefs, reportlab.platypus.paraparser
+no module named htmlentitydefs - imported by reportlab.platypus.paraparser
+no module named HTMLParser.HTMLParser - imported by HTMLParser, reportlab.platypus.paraparser
+no module named HTMLParser - imported by reportlab.platypus.paraparser
+no module named reportlab.platypus.flowables.Flowable - imported by reportlab.platypus.flowables, reportlab.platypus.paragraph, reportlab.lib.pdfencrypt, reportlab.platypus, reportlab.platypus.tables
+no module named reportlab.platypus.cleanBlockQuotedText - imported by reportlab.platypus, reportlab.platypus.paraparser
+no module named _json.make_encoder - imported by _json, json.encoder
+no module named _json.encode_basestring_ascii - imported by _json, json.encoder
+no module named _json.scanstring - imported by _json, json.decoder
+no module named _json.make_scanner - imported by _json, json.scanner
+no module named iconv_codec - imported by bs4.dammit
+no module named cchardet - imported by bs4.dammit
+no module named bs4.builder.XML - imported by bs4.builder, bs4.builder._lxml
+no module named bs4.builder.TreeBuilder - imported by bs4.builder, bs4.builder._lxml
+no module named bs4.builder.FAST - imported by bs4.builder, bs4.builder._lxml
+no module named ordereddict.OrderedDict - imported by ordereddict, html5lib.treewalkers.etree, html5lib.filters.alphabeticalattributes
+no module named ordereddict - imported by html5lib.treewalkers.etree, html5lib.filters.alphabeticalattributes
+no module named genshi.core.START_NS - imported by genshi.core, html5lib.treewalkers.genshistream
+no module named genshi.core.END_CDATA - imported by genshi.core, html5lib.treewalkers.genshistream
+no module named genshi.core.START_CDATA - imported by genshi.core, html5lib.treewalkers.genshistream
+no module named genshi.core.END_NS - imported by genshi.core, html5lib.treewalkers.genshistream
+no module named genshi.core.COMMENT - imported by genshi.core, html5lib.treewalkers.genshistream
+no module named genshi.core.PI - imported by genshi.core, html5lib.treewalkers.genshistream
+no module named genshi.core.TEXT - imported by genshi.core, html5lib.treewalkers.genshistream
+no module named genshi.core.DOCTYPE - imported by genshi.core, html5lib.treewalkers.genshistream
+no module named genshi.core.XML_NAMESPACE - imported by genshi.core, html5lib.treewalkers.genshistream
+no module named genshi.core.END - imported by genshi.core, html5lib.treewalkers.genshistream
+no module named genshi.core.START - imported by genshi.core, html5lib.treewalkers.genshistream
+no module named genshi.QName - imported by genshi, html5lib.treewalkers.genshistream
+no module named genshi.core - imported by html5lib.treewalkers.genshistream
+no module named genshi - imported by html5lib.treewalkers.genshistream, genshi.core
+no module named xml.dom.minidom._set_attribute_node - imported by xml.dom.minidom, xml.dom.expatbuilder
+no module named xml.dom.minidom._append_child - imported by xml.dom.minidom, xml.dom.expatbuilder
+no module named datrie.Trie - imported by datrie, html5lib.trie.datrie
+no module named datrie - imported by html5lib.trie.datrie
+no module named charade.UniversalDetector - imported by charade, html5lib.inputstream
+no module named charade.universaldetector - imported by html5lib.inputstream
+no module named charade - imported by html5lib.inputstream
+no module named bs4.builder.HTML_5 - imported by bs4.builder, bs4.builder._html5lib
+no module named bs4.builder.PERMISSIVE - imported by bs4.builder, bs4.builder._html5lib, bs4.builder._lxml
+no module named bs4.builder.HTMLTreeBuilder - imported by bs4.builder, bs4.builder._htmlparser, bs4.builder._html5lib, bs4.builder._lxml
+no module named bs4.builder.STRICT - imported by bs4.builder, bs4.builder._htmlparser
+no module named bs4.builder.HTML - imported by bs4.builder, bs4.builder._htmlparser, bs4.builder._html5lib, bs4.builder._lxml
+no module named distutils.util.convert_path - imported by distutils.util, distutils.filelist
+no module named _multiprocessing.sem_unlink - imported by _multiprocessing, multiprocessing.synchronize
+no module named _multiprocessing.SemLock - imported by _multiprocessing, multiprocessing.synchronize
+no module named multiprocessing.get_start_method - imported by multiprocessing, multiprocessing.spawn
+no module named multiprocessing.set_start_method - imported by multiprocessing, multiprocessing.spawn
+no module named multiprocessing.pool.ThreadPool - imported by multiprocessing.pool, multiprocessing.dummy
+no module named multiprocessing.get_context - imported by multiprocessing, multiprocessing.pool, multiprocessing.managers, multiprocessing.sharedctypes
+no module named multiprocessing.TimeoutError - imported by multiprocessing, multiprocessing.pool
+no module named multiprocessing.connection.Listener - imported by multiprocessing.connection, multiprocessing.resource_sharer
+no module named multiprocessing.connection.Client - imported by multiprocessing.connection, multiprocessing.resource_sharer
+no module named multiprocessing.AuthenticationError - imported by multiprocessing, multiprocessing.connection
+no module named multiprocessing.BufferTooShort - imported by multiprocessing, multiprocessing.connection
+no module named multiprocessing.context.get_spawning_popen - imported by multiprocessing.context, multiprocessing.process
+no module named _ctypes._wstring_at_addr - imported by _ctypes, ctypes
+no module named _ctypes._memset_addr - imported by _ctypes, ctypes
+no module named _ctypes._string_at_addr - imported by _ctypes, ctypes
+no module named _ctypes._cast_addr - imported by _ctypes, ctypes
+no module named _ctypes._memmove_addr - imported by _ctypes, ctypes
+no module named _ctypes.set_last_error - imported by _ctypes, ctypes
+no module named _ctypes.get_last_error - imported by _ctypes, ctypes
+no module named _ctypes._check_HRESULT - imported by _ctypes, ctypes
+no module named _ctypes._pointer_type_cache - imported by _ctypes, ctypes
+no module named _ctypes.pointer - imported by _ctypes, ctypes
+no module named _ctypes.POINTER - imported by _ctypes, ctypes
+no module named _ctypes._SimpleCData - imported by _ctypes, ctypes
+no module named _ctypes.get_errno - imported by _ctypes, ctypes
+no module named _ctypes.set_errno - imported by _ctypes, ctypes
+no module named _ctypes.addressof - imported by _ctypes, ctypes
+no module named _ctypes.resize - imported by _ctypes, ctypes
+no module named _ctypes.sizeof - imported by _ctypes, ctypes
+no module named _ctypes.byref - imported by _ctypes, ctypes
+no module named _ctypes.alignment - imported by _ctypes, ctypes
+no module named _ctypes.dlopen - imported by _ctypes, ctypes
+no module named _ctypes.FUNCFLAG_STDCALL - imported by _ctypes, ctypes
+no module named _ctypes.LoadLibrary - imported by _ctypes, ctypes
+no module named _ctypes.FUNCFLAG_USE_ERRNO - imported by _ctypes, ctypes
+no module named _ctypes.FUNCFLAG_USE_LASTERROR - imported by _ctypes, ctypes
+no module named _ctypes.FUNCFLAG_CDECL - imported by _ctypes, ctypes
+no module named _ctypes.FUNCFLAG_PYTHONAPI - imported by _ctypes, ctypes
+no module named _ctypes.FormatError - imported by _ctypes, ctypes
+no module named _ctypes.ArgumentError - imported by _ctypes, ctypes
+no module named _ctypes.RTLD_GLOBAL - imported by _ctypes, ctypes
+no module named _ctypes.RTLD_LOCAL - imported by _ctypes, ctypes
+no module named _ctypes.__version__ - imported by _ctypes, ctypes
+no module named _ctypes.CFuncPtr - imported by _ctypes, ctypes
+no module named _ctypes._Pointer - imported by _ctypes, ctypes
+no module named _ctypes.Array - imported by _ctypes, ctypes
+no module named _ctypes.Structure - imported by _ctypes, ctypes
+no module named _ctypes.Union - imported by _ctypes, ctypes
+no module named multiprocessing.context.assert_spawning - imported by multiprocessing.context, multiprocessing.sharedctypes
