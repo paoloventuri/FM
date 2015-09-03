@@ -41,7 +41,8 @@ class LeagueManager():
 		else:
 			self.league["allenatori"][n] = {
 				"giocatori" : {},
-				"giornate"	: {}
+				"giornate"	: {}, 
+				"penalità"	: 0.0
 			}
 			self.save_league()
 			return 2
@@ -164,9 +165,13 @@ class LeagueManager():
 		return players, changes
 
 
+	def apply_penality(self, manager, entity):
+		self.league["allenatori"][manager]["penalità"] = self.league["allenatori"][manager]["penalità"] + entity
+		self.save_league()
+
 	def load_league(self):
 		with open("json/leagues/" + str(self.l_name) + ".json") as f:
-			self.league =  json.load(f)
+			self.league = json.load(f)
 
 
 	def save_league(self):

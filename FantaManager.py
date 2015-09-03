@@ -4,11 +4,15 @@ from league_manager     import LeagueManager as LM
 from stat_downloader    import StatDownloader
 from autocomplete_entry import AutocompleteEntry
 from pdf_creator        import PdfCreator
-import re
+import re, os
 
 class FantaManager():
     def __init__(self):
         self.select_league()
+
+    def check_folders(self):
+        os.makedirs("json", exist_ok=True)
+        os.makedirs("json/leagues", exist_ok=True)
 
     def set_icon(self, fin):
         img = PhotoImage(file='FM')
@@ -130,6 +134,7 @@ class FantaManager():
         self.home_page()
 
     def select_league(self):
+        self.check_folders()
         self.main_f = Tk()
         self.main_f.geometry("800x400+200+100")
         self.main_f.title("FM - Selezione lega")
@@ -169,26 +174,32 @@ class FantaManager():
 
     def home_page(self):
         self.main_f = Tk()
-        self.main_f.geometry("800x400+200+100")
+        self.main_f.geometry("800x500+200+100")
         self.main_f.title("FM - Home Page")
 
         l = Label(self.main_f, text = "Lega in uso : " + self.lm.league["name"], font = ("Helvetica", 16))
         l.pack(fill = X, pady = (20, 20))
 
-        i_formB = Button(self.main_f, text = "Inserisci formazione", font = ("Helvetica", 12), bg = "blue", command = self.insert_form)
-        i_formB.pack(fill = BOTH, expand = 1, pady = (0, 20), padx = (5, 10))
-
-        c_clasB = Button(self.main_f, text = "Calcola punteggi", font = ("Helvetica", 12), bg = "blue", command = self.calc_turn)
+        c_clasB = Button(self.main_f, text = "Calcola punteggi", font = ("Helvetica", 12), bg = "#01A9DB", command = self.calc_turn)
         c_clasB.pack(fill = BOTH, expand = 1, pady = (0, 20), padx = (5, 10))
 
-        s_clasB = Button(self.main_f, text = "Mostra classifiche", font = ("Helvetica", 12), bg = "blue", command = self.show_class)
+        s_clasB = Button(self.main_f, text = "Mostra classifiche", font = ("Helvetica", 12), bg = "#01A9DB", command = self.show_class)
         s_clasB.pack(fill = BOTH, expand = 1, pady = (0, 20), padx = (5, 10))
 
-        m_sqadB = Button(self.main_f, text = "Modifica squadra", font = ("Helvetica", 12), bg = "blue", command = self.mod_team)
+        s_teamB = Button(self.main_f, text = "Mostra squadre", font = ("Helvetica", 12), bg = "#01A9DB", command = self.show_teams)
+        s_teamB.pack(fill = BOTH, expand = 1, pady = (0, 20), padx = (5, 10))
+
+        i_formB = Button(self.main_f, text = "Inserisci formazione", font = ("Helvetica", 12), bg = "#01A9DB", command = self.insert_form)
+        i_formB.pack(fill = BOTH, expand = 1, pady = (0, 20), padx = (5, 10))
+
+        m_sqadB = Button(self.main_f, text = "Modifica squadra", font = ("Helvetica", 12), bg = "#01A9DB", command = self.mod_team)
         m_sqadB.pack(fill = BOTH, expand = 1, pady = (0, 20), padx = (5, 10))
 
-        i_manaB = Button(self.main_f, text = "Inserisci manager", font = ("Helvetica", 12), bg = "blue", command = self.ins_manager)
+        i_manaB = Button(self.main_f, text = "Inserisci manager", font = ("Helvetica", 12), bg = "#01A9DB", command = self.ins_manager)
         i_manaB.pack(fill = BOTH, expand = 1, pady = (0, 20), padx = (5, 10))
+
+        add_peB = Button(self.main_f, text = "Aggiungi penalità", font = ("Helvetica", 12), bg = "#01A9DB", command = self.add_penality)
+        add_peB.pack(fill = BOTH, expand = 1, pady = (0, 20), padx = (5, 10))
 
         self.main_f.protocol("WM_DELETE_WINDOW", self.exit)
         self.set_icon(self.main_f)
@@ -743,10 +754,24 @@ class FantaManager():
                 turn.append(str(s))
             table_data.append(turn)
 
-        tree.insert("", 39, "Tot", text = "Totale", values = tot)
+        pen = []
+        for m in man:
+            p =  self.lm.league["allenatori"][m]["penalità"]
+            pen.append(p)
+            ind = man.index(m)
+            tot[ind] = tot[ind] - p
+
+        tree.insert("", 39, "Pen", text = "Penalità", values = pen)
+        tree.insert("", 40, "Tot", text = "Totale", values = tot)
         tots = ["Totale"]
         for t in tot:
             tots.append(str(t))
+
+        pens = ["Penalità"]
+        for p in pen:
+            pens.append(str(p))
+
+        table_data.append(pens)
         table_data.append(tots)
         tree.pack()
 
@@ -764,5 +789,85 @@ class FantaManager():
         self.set_icon(self.show_class_f)
         self.show_class_f.mainloop()
 
+    def add_penality(self):
+        self.add_penality1_f = Toplevel()
+        self.add_penality1_f.geometry("800x400+200+100")
+        self.add_penality1_f.title("FM - Selezione manager")
+
+        l = Label(self.add_penality1_f, text = "Seleziona il manager a cui attribuire una penalità", font=("Helvetica", 16))
+        l.pack(fill = X, pady = (20, 20))
+
+        man = [m for m in self.lm.league["allenatori"].keys()]
+        man.sort()
+
+        self.manager = StringVar()
+        self.manager.set("")
+
+        for m in man:
+            r = Radiobutton(self.add_penality1_f, text = m, variable = self.manager, value = m)
+            r.pack()
+
+        b = Frame(self.add_penality1_f)
+
+        exB = Button(b, text = "Esci", command = lambda: self.add_penality1_f.destroy())
+        exB.pack(side = RIGHT, pady = (20, 20), padx = (5, 10))
+
+        okB = Button(b, text = "OK", command = self.add_penality2)
+        okB.pack(side = RIGHT, pady = (20, 20))
+
+        b.pack(side=BOTTOM, fill=X)
+
+        self.set_icon(self.add_penality1_f)
+        self.add_penality1_f.mainloop()
+
+    def add_penality2(self):
+        if self.manager.get() == "":
+            messagebox.showwarning(title = "FM - Errore", message = "Nessun manager selezionato")
+            self.add_penality1_f.destroy()
+            self.add_penality()            
+        else:
+            self.add_penality1_f.destroy()
+            self.select_entity()
+
+    def select_entity(self):
+        self.select_entity_f =Toplevel()
+        self.select_entity_f.geometry("400x200+400+200")
+        self.select_entity_f.title("FM - Selezione penalità")
+
+        l = Label(self.select_entity_f, text = "Seleziona l'entità della penalità'", font=("Helvetica", 16))
+        l.pack(fill = X, pady = (20, 20))
+
+        self.entity = StringVar()
+        self.entity_s = Spinbox(self.select_entity_f, from_ = 0, to = 38, textvariable = self.entity, increment = 0.5)
+        self.entity_s.pack()
+
+        b = Frame(self.select_entity_f)
+
+        def ind():
+            self.select_entity_f.destroy()
+            self.add_penality()
+
+        inB = Button(b, text = "Indietro", command = ind)
+        inB.pack(side = RIGHT, pady = (20, 20), padx = (0, 20))
+
+        okB = Button(b, text = "OK", command = self.apply_penality)
+        okB.pack(side = RIGHT, pady = (20, 20), padx = (20, 20))
+
+        b.pack(side = BOTTOM, fill = X)
+        self.set_icon(self.select_entity_f)
+        self.select_entity_f.mainloop()
+
+    def apply_penality(self):
+        a = messagebox.askyesno(title = "FM penalità", message = "Vuoi veramente applicare una penalità di " + self.entity.get() + " punti a " + self.manager.get())
+        if a:
+            self.lm.apply_penality(self.manager.get(), float(self.entity.get()))
+            messagebox.showinfo(title = "FM - Info", message = "Penalità applicata.")
+            self.select_entity_f.destroy()
+        else:
+            messagebox.showinfo(title = "FM - Info", message = "Penalità non applicata.")
+            self.select_entity_f.destroy()    
+
+    def show_teams(self):
+        pass
 
 FM = FantaManager()
