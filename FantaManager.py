@@ -868,6 +868,76 @@ class FantaManager():
             self.select_entity_f.destroy()    
 
     def show_teams(self):
-        pass
+        self.show_teams_f =Toplevel()
+        self.show_teams_f.title("FM - Squadre del campionato")
+        self.show_teams_f.geometry("1000x800")
+        self.show_teams_f.attributes('-zoomed', True)
+        tree = ttk.Treeview(self.show_teams_f, height="30")
+        pdf = PdfCreator("Squadre - " + self.lm.league["name"])
+ 
+        tree["columns"] = ("Giocatore", "Ruolo", "Prezzo pagato")
+        tree.column("Giocatore", width = 150)
+        tree.column("Ruolo", width = 70)
+        tree.column("Prezzo pagato", width = 100)
+        
+        tree.heading("Giocatore", text="Giocatore")
+        tree.heading("Ruolo", text="Ruolo")
+        tree.heading("Prezzo pagato", text="Prezzo pagato")
+        
+        man = [k for k in self.lm.league["allenatori"].keys()]
+        man.sort()
+        n = 1
+
+        for m in man:
+            table_data =[["Giocatore", "Ruolo", "Prezzo pagato"]]
+            players = self.lm.league["allenatori"][m]["giocatori"]
+            tree.insert("", n, m, text = m)
+            P = []
+            D = []
+            C = []
+            A = []
+
+            for p in players.keys():
+                if players[p]["ruolo"] == "Portiere":
+                    P.append(p)
+                elif players[p]["ruolo"] == "Difensore":
+                    D.append(p)
+                elif players[p]["ruolo"] == "Centrocampista":
+                    C.append(p)
+                elif players[p]["ruolo"] == "Attaccante":
+                    A.append(p)
+
+            P.sort()
+            D.sort()
+            C.sort()
+            A.sort()
+            tot = 0.0
+            for p in P + D + C + A:
+                tree.insert(m, n, text = p, values = (players[p]["ruolo"], players[p]["costo"]))
+                table_data.append([str(p), str(players[p]["ruolo"]), str(players[p]["costo"])])
+                tot = tot + players[p]["costo"]
+                n = n + 1
+
+            tree.insert(m, n, text = "Totale", values = ("-", tot))
+            table_data.append(["Totale", "-", str(tot)])
+            pdf.insert_table(m, table_data)
+            n = n + 1
+
+        tree.pack()
+
+
+        b = Frame(self.show_teams_f)
+
+        def export():
+            pdf.create_pdf()
+
+        okB = Button(b, text = "Esporta in PDF", command = export)
+        okB.pack(side = RIGHT, pady = (20, 20), padx = (20, 20))
+
+        b.pack(side = BOTTOM, fill = X)
+        self.set_icon(self.show_teams_f)
+        self.show_teams_f.mainloop()
+
+
 
 FM = FantaManager()
