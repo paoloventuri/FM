@@ -7,7 +7,7 @@ import json, sys, re
 class TurnDownloader():
 	def __init__(self, turn):
 		self.turn = turn
-		self.year = "2014-15"
+		self.year = "2015-16"
 		self.load_turn()
 
 	def download_turn(self):

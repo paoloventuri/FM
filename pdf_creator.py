@@ -1,8 +1,9 @@
-from reportlab.lib import colors
-from reportlab.lib.pagesizes import A4, inch, landscape
-from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, PageBreak
-from reportlab.lib.styles import getSampleStyleSheet
- 
+from reportlab.lib 				import colors
+from reportlab.lib.pagesizes 	import A4, inch, landscape
+from reportlab.platypus 		import SimpleDocTemplate, Table, TableStyle, Paragraph, PageBreak
+from reportlab.lib.styles 		import getSampleStyleSheet
+from reportlab					import rl_settings
+
 class PdfCreator():
 	def __init__(self, title):
 		self.doc = SimpleDocTemplate("pdf/" + title + ".pdf", pagesize=A4, rightMargin=30,leftMargin=30, topMargin=30,bottomMargin=18)

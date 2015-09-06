@@ -2,6 +2,7 @@ from tkinter            import *
 from tkinter            import messagebox, ttk
 from league_manager     import LeagueManager as LM
 from stat_downloader    import StatDownloader
+from turn_downloader    import TurnDownloader
 from autocomplete_entry import AutocompleteEntry
 from pdf_creator        import PdfCreator
 import re, os
@@ -13,6 +14,7 @@ class FantaManager():
     def check_folders(self):
         os.makedirs("json", exist_ok=True)
         os.makedirs("json/leagues", exist_ok=True)
+        os.makedirs("pdf", exist_ok=True)
 
     def set_icon(self, fin):
         img = PhotoImage(file='FM')
@@ -199,6 +201,9 @@ class FantaManager():
         i_manaB.pack(fill = BOTH, expand = 1, pady = (0, 20), padx = (5, 10))
 
         add_peB = Button(self.main_f, text = "Aggiungi penalità", font = ("Helvetica", 12), bg = "#01A9DB", command = self.add_penality)
+        add_peB.pack(fill = BOTH, expand = 1, pady = (0, 20), padx = (5, 10))
+
+        add_peB = Button(self.main_f, text = "Aggiorna database giocatori", font = ("Helvetica", 12), bg = "#01A9DB", command = self.update_stats)
         add_peB.pack(fill = BOTH, expand = 1, pady = (0, 20), padx = (5, 10))
 
         self.main_f.protocol("WM_DELETE_WINDOW", self.exit)
@@ -650,7 +655,7 @@ class FantaManager():
         self.show_turn_f =Toplevel()
         self.show_turn_f.title("FM - Risultati giornata " + self.turn_s)
         self.show_turn_f.geometry("1000x800")
-        self.show_turn_f.attributes('-zoomed', True)
+        self.show_turn_f.wm_state('zoomed')
         res_dict = self.lm.calc_turn_score(self.turn_s)
         tree = ttk.Treeview(self.show_turn_f, height="30")
         pdf = PdfCreator("Turno " + self.turn_s + " - " + self.lm.league["name"])
@@ -706,9 +711,18 @@ class FantaManager():
 
         def export():
             pdf.create_pdf()
+            messagebox.showinfo(title = "FM - Info", message = "Pdf creato.")
+
+        def update():
+            self.show_turn_f.destroy()
+            TurnDownloader(int(self.turn_s)).parse_turn()
+            self.show_turn()
 
         okB = Button(b, text = "Esporta in PDF", command = export)
         okB.pack(side = RIGHT, pady = (20, 20), padx = (20, 20))
+
+        upB = Button(b, text = "Riscarica voti", command = update)
+        upB.pack(side = RIGHT, pady = (20, 20), padx = (20, 20))
 
         b.pack(side = BOTTOM, fill = X)
         self.set_icon(self.show_turn_f)
@@ -718,7 +732,7 @@ class FantaManager():
         self.show_class_f =Toplevel()
         self.show_class_f.title("FM - Classifica")
         self.show_class_f.geometry("1000x800")
-        self.show_class_f.attributes('-zoomed', True)
+        self.show_class_f.wm_state('zoomed')
         tree = ttk.Treeview(self.show_class_f, height="30")
 
         man = [k for k in self.lm.league["allenatori"].keys()]
@@ -756,7 +770,7 @@ class FantaManager():
 
         pen = []
         for m in man:
-            p =  self.lm.league["allenatori"][m]["penalità"]
+            p =  self.lm.league["allenatori"][m]["penalita"]
             pen.append(p)
             ind = man.index(m)
             tot[ind] = tot[ind] - p
@@ -781,6 +795,7 @@ class FantaManager():
             pdf = PdfCreator("Classifica - " + self.lm.league["name"])
             pdf.insert_table("Classifica", table_data)
             pdf.create_pdf()
+            messagebox.showinfo(title = "FM - Info", message = "Pdf creato.")
 
         okB = Button(b, text = "Esporta in PDF", command = export)
         okB.pack(side = RIGHT, pady = (20, 20), padx = (20, 20))
@@ -871,7 +886,7 @@ class FantaManager():
         self.show_teams_f =Toplevel()
         self.show_teams_f.title("FM - Squadre del campionato")
         self.show_teams_f.geometry("1000x800")
-        self.show_teams_f.attributes('-zoomed', True)
+        self.show_teams_f.wm_state('zoomed')
         tree = ttk.Treeview(self.show_teams_f, height="30")
         pdf = PdfCreator("Squadre - " + self.lm.league["name"])
  
@@ -930,6 +945,7 @@ class FantaManager():
 
         def export():
             pdf.create_pdf()
+            messagebox.showinfo(title = "FM - Info", message = "Pdf creato.")
 
         okB = Button(b, text = "Esporta in PDF", command = export)
         okB.pack(side = RIGHT, pady = (20, 20), padx = (20, 20))
@@ -938,6 +954,10 @@ class FantaManager():
         self.set_icon(self.show_teams_f)
         self.show_teams_f.mainloop()
 
-
+    def update_stats(self):
+        a = messagebox.askyesno(title = "FM - Aggiorna giocatori", message = "Vuoi veramente aggiornare il database dei giocatori?")
+        if a:
+            StatDownloader().parse_stat()
+            messagebox.showinfo(title = "FM - Info", message = "Database aggiornato.")
 
 FM = FantaManager()

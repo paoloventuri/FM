@@ -42,7 +42,7 @@ class LeagueManager():
 			self.league["allenatori"][n] = {
 				"giocatori" : {},
 				"giornate"	: {}, 
-				"penalità"	: 0.0
+				"penalita"	: 0.0
 			}
 			self.save_league()
 			return 2
@@ -166,7 +166,7 @@ class LeagueManager():
 
 
 	def apply_penality(self, manager, entity):
-		self.league["allenatori"][manager]["penalità"] = self.league["allenatori"][manager]["penalità"] + entity
+		self.league["allenatori"][manager]["penalita"] = self.league["allenatori"][manager]["penalita"] + entity
 		self.save_league()
 
 	def load_league(self):

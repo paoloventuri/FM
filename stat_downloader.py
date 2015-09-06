@@ -5,8 +5,7 @@ import json
 
 class StatDownloader():
 	def __init__(self):
-		self.year = "2014-15"
-		self.parse_stat()
+		self.year = "2015-16"
 
 	def download_stat(self):
 		try:
