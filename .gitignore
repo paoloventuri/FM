@@ -1,1 +1,10 @@
-\build\*
+**/dist/
+**/dist/**
+**/pdf/
+**/pdf/**
+**/json/
+**/json/**
+**/__pycache__/
+**/__pycache__/**
+**/build/
+**/build/**
