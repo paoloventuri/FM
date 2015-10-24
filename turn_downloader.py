@@ -43,12 +43,16 @@ class TurnDownloader():
 			for div in l.find_all("div"):
 				span = div.find_all("span", "playerNameIn")
 				if span:
-					player_stat.append(self.normalize_name(span[0].text))
+					role = div.find_all("span", "playerRole show-for-small")
+					if role and self.normalize_name(span[0].text) == "Lopez D" and role[0].text == "P":
+						player_stat.append("Lopez Diego")
+					else:
+						player_stat.append(self.normalize_name(span[0].text))
 			for div in l.find_all("div", "inParameter"):
 				player_stat.append(div.text.strip())
 			
 			if len(player_stat) == 11 and player_stat[10] != "-":
-				turn_dict[player_stat[1]] = {
+				turn_dict[player_stat[0]] = {
 					"voto"					: self.convert_f(player_stat[2]),
 					"gol"					: self.convert_i(player_stat[3]),
 					"assist" 				: self.convert_i(player_stat[4]),

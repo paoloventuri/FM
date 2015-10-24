@@ -38,6 +38,8 @@ class StatDownloader():
 
 		stat 	= {}
 		for i in range(len(names)):
+			if names[i] == "Lopez D" and role[i] == "Portiere":
+				names[i] = "Lopez Diego"
 			stat[names[i]] = {
 				"squadra"			: teams[i],
 				"ruolo"				: role[i],
