@@ -15,13 +15,16 @@ class AutocompleteEntry(Entry):
         self.bind("<Right>", self.selection)
         self.bind("<Up>", self.up)
         self.bind("<Down>", self.down)
-        
+        self.bind("<Return>", self.selection)
+        self.bind("<Escape>", self.hide)
+        self.bind("<Tab>", self.hide)
+
         self.lb_up = False
 
     def changed(self, name, index, mode):  
 
         if self.var.get() == '':
-            if self.lb:
+            if hasattr(self, 'lb'):
                 self.lb.destroy()
             self.lb_up = False
         else:
@@ -50,6 +53,13 @@ class AutocompleteEntry(Entry):
             self.lb_up = False
             self.icursor(END)
 
+    def hide(self, event):
+        if hasattr(self, 'lb'):
+            self.lb.destroy()
+
+        self.lb_up = False
+        self.icursor(END) 
+
     def up(self, event):
 
         if self.lb_up:
@@ -67,14 +77,15 @@ class AutocompleteEntry(Entry):
 
         if self.lb_up:
             if self.lb.curselection() == ():
-                index = '0'
+                index = '-1'
             else:
                 index = self.lb.curselection()[0]
             if index != END:                        
                 self.lb.selection_clear(first=index)
                 index = str(int(index)+1)        
                 self.lb.selection_set(first=index)
-                self.lb.activate(index) 
+                self.lb.activate(index)
+
 
     def comparison(self):
         pattern = re.compile('.*' + self.var.get().lower() + '.*')

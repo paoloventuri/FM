@@ -139,8 +139,8 @@ class FantaManager():
         self.check_folders()
         self.main_f = Tk()
         self.main_f.geometry("800x400+200+100")
+        self.main_f.attributes('-zoomed', True)
         self.main_f.title("FM - Selezione lega")
-        
 
         l = Label(self.main_f, text = "Seleziona la lega che vuoi gestire", font=("Helvetica", 16))
         l.pack(fill = X, pady = (20, 20))
@@ -177,6 +177,7 @@ class FantaManager():
     def home_page(self):
         self.main_f = Tk()
         self.main_f.geometry("800x500+200+100")
+        self.main_f.attributes('-zoomed', True)
         self.main_f.title("FM - Home Page")
 
         l = Label(self.main_f, text = "Lega in uso : " + self.lm.league["name"], font = ("Helvetica", 16))
@@ -245,7 +246,7 @@ class FantaManager():
 
     def mod_team(self):
         self.mod_team1_f = Toplevel()
-        self.mod_team1_f.geometry("800x400+200+100")
+        self.mod_team1_f.attributes('-zoomed', True)
         self.mod_team1_f.title("FM - Selezione manager")
 
         l = Label(self.mod_team1_f, text = "Seleziona il manager di cui modificare la squadra", font=("Helvetica", 16))
@@ -356,7 +357,7 @@ class FantaManager():
 
     def insert_form(self):
         self.insert_form1_f = Toplevel()
-        self.insert_form1_f.geometry("800x400+200+100")
+        self.insert_form1_f.attributes('-zoomed', True)
         self.insert_form1_f.title("FM - Selezione manager")
 
         l = Label(self.insert_form1_f, text = "Seleziona il manager di cui inserire la formazione", font=("Helvetica", 16))
@@ -426,6 +427,7 @@ class FantaManager():
         self.select_turn_f.destroy()
         self.select_mod_f = Toplevel()
         self.select_mod_f.geometry("800x400+200+100")
+        self.select_mod_f.attributes('-zoomed', True)
         self.select_mod_f.title("FM - Selezione modulo")
 
         l = Label(self.select_mod_f, text = "Seleziona il modulo da utilizzare in questa giornata", font=("Helvetica", 16))
@@ -476,71 +478,77 @@ class FantaManager():
 
         self.insert_players_f = Toplevel()
         self.insert_players_f.title("FM - Inserimento formazione")
-        self.insert_players_f.geometry("400x800+400+10")
+        self.insert_players_f.attributes('-zoomed', True)
 
         l = Label(self.insert_players_f, text = "Seleziona i titolari di giornata", font=("Helvetica", 14))
-        l.grid(row = 0, columnspan = 2, pady = 15)
+        l.pack(fill = X)
 
-        self.por_t = AutocompleteEntry(portieri, self.insert_players_f, "")
-        self.dif_t = [AutocompleteEntry(difensori, self.insert_players_f, "") for i in range(n_dif)]
-        self.cen_t = [AutocompleteEntry(centrocampisti, self.insert_players_f, "") for i in range(n_cen)]
-        self.att_t = [AutocompleteEntry(attaccanti, self.insert_players_f, "") for i in range(n_att)]
-        self.por_p = [AutocompleteEntry(portieri, self.insert_players_f, "") for i in range(2)]
-        self.dif_p = [AutocompleteEntry(difensori, self.insert_players_f, "") for i in range(3)]
-        self.cen_p = [AutocompleteEntry(centrocampisti, self.insert_players_f, "") for i in range(3)]
-        self.att_p = [AutocompleteEntry(attaccanti, self.insert_players_f, "") for i in range(2)]
-              
-        l = Label(self.insert_players_f, text = "Portiere: ", font=("Helvetica"))
-        l.grid(row = 1, column = 0, padx = 10)
-        self.por_t.grid(row = 1, column = 1, padx = 10)
-
-        row = 2
+        p = Frame(self.insert_players_f)      
+        self.por_t = AutocompleteEntry(portieri, p, "")
+        self.dif_t = [AutocompleteEntry(difensori, p, "") for i in range(n_dif)]
+        self.cen_t = [AutocompleteEntry(centrocampisti, p, "") for i in range(n_cen)]
+        self.att_t = [AutocompleteEntry(attaccanti, p, "") for i in range(n_att)]
+        self.por_p = [AutocompleteEntry(portieri, p, "") for i in range(2)]
+        self.dif_p = [AutocompleteEntry(difensori, p, "") for i in range(3)]
+        self.cen_p = [AutocompleteEntry(centrocampisti, p, "") for i in range(3)]
+        self.att_p = [AutocompleteEntry(attaccanti, p, "") for i in range(2)]
+        
+        l = Label(p, text = "Portiere: ", font=("Helvetica"))
+        l.grid(row = 0, column = 0, padx = 10)
+        self.por_t.grid(row = 0, column = 1, padx = 10)
+        
+        row = 1
 
         for e in range(n_dif):
-            l = Label(self.insert_players_f, text = "Difensore: ", font=("Helvetica"))
+            l = Label(p, text = "Difensore: ", font=("Helvetica"))
             l.grid(row = row, column = 0, padx = 10)
             self.dif_t[e].grid(row = row, column = 1, padx = 10)
             row = row + 1
 
         for e in range(n_cen):
-            l = Label(self.insert_players_f, text = "Centrocampista: ", font=("Helvetica"))
+            l = Label(p, text = "Centrocampista: ", font=("Helvetica"))
             l.grid(row = row, column = 0, padx = 10)
             self.cen_t[e].grid(row = row, column = 1, padx = 10)
             row = row + 1
 
         for e in range(n_att):
-            l = Label(self.insert_players_f, text = "Attaccante: ", font=("Helvetica"))
+            l = Label(p, text = "Attaccante: ", font=("Helvetica"))
             l.grid(row = row, column = 0, padx = 10)
             self.att_t[e].grid(row = row, column = 1, padx = 10)
             row = row + 1
 
-        l = Label(self.insert_players_f, text = "Seleziona la panchina di giornata", font=("Helvetica", 14))
-        l.grid(row = row, columnspan = 2, pady = 15)
+        l = Label(p, text = "Seleziona la panchina di giornata", font=("Helvetica", 14))
+        l.grid(row = row, columnspan = 3, pady = 5)
         row = row + 1
 
         for e in range(2):
-            l = Label(self.insert_players_f, text = "Portiere: ", font=("Helvetica"))
+            l = Label(p, text = "Portiere: ", font=("Helvetica"))
             l.grid(row = row, column = 0, padx = 10)
             self.por_p[e].grid(row = row, column = 1, padx = 10)
             row = row + 1
 
         for e in range(3):
-            l = Label(self.insert_players_f, text = "Difensore: ", font=("Helvetica"))
+            l = Label(p, text = "Difensore: ", font=("Helvetica"))
             l.grid(row = row, column = 0, padx = 10)
             self.dif_p[e].grid(row = row, column = 1, padx = 10)
             row = row + 1
 
         for e in range(3):
-            l = Label(self.insert_players_f, text = "Centrocampista: ", font=("Helvetica"))
+            l = Label(p, text = "Centrocampista: ", font=("Helvetica"))
             l.grid(row = row, column = 0, padx = 10)
             self.cen_p[e].grid(row = row, column = 1, padx = 10)
             row = row + 1
 
         for e in range(2):
-            l = Label(self.insert_players_f, text = "Attaccante: ", font=("Helvetica"))
+            l = Label(p, text = "Attaccante: ", font=("Helvetica"))
             l.grid(row = row, column = 0, padx = 10)
             self.att_p[e].grid(row = row, column = 1, padx = 10)
             row = row + 1
+
+
+        l = Label(p, text = " ", font=("Helvetica"))
+        l.grid(row = row, column = 0, pady = 5)
+        p.pack()
 
         b = Frame(self.insert_players_f)
 
@@ -554,7 +562,7 @@ class FantaManager():
         okB = Button(b, text = "OK", command = self.validate_form)
         okB.pack(side = RIGHT, pady = (20, 20), padx = (20, 20))
 
-        b.grid(row = row , column = 1)
+        b.pack(side = RIGHT)
         self.set_icon(self.insert_players_f)
         self.insert_players_f.mainloop()
 
@@ -655,7 +663,7 @@ class FantaManager():
         self.show_turn_f =Toplevel()
         self.show_turn_f.title("FM - Risultati giornata " + self.turn_s)
         self.show_turn_f.geometry("1000x800")
-        self.show_turn_f.wm_state('zoomed')
+        self.show_turn_f.attributes('-zoomed', True)
         res_dict = self.lm.calc_turn_score(self.turn_s)
         tree = ttk.Treeview(self.show_turn_f, height="30")
         pdf = PdfCreator("Turno " + self.turn_s + " - " + self.lm.league["name"])
@@ -732,7 +740,7 @@ class FantaManager():
         self.show_class_f =Toplevel()
         self.show_class_f.title("FM - Classifica")
         self.show_class_f.geometry("1000x800")
-        self.show_class_f.wm_state('zoomed')
+        self.show_class_f.attributes('-zoomed', True)
         tree = ttk.Treeview(self.show_class_f, height="30")
 
         man = [k for k in self.lm.league["allenatori"].keys()]
@@ -806,7 +814,7 @@ class FantaManager():
 
     def add_penality(self):
         self.add_penality1_f = Toplevel()
-        self.add_penality1_f.geometry("800x400+200+100")
+        self.add_penality1_f.attributes('-zoomed', True)
         self.add_penality1_f.title("FM - Selezione manager")
 
         l = Label(self.add_penality1_f, text = "Seleziona il manager a cui attribuire una penalità", font=("Helvetica", 16))
@@ -886,7 +894,7 @@ class FantaManager():
         self.show_teams_f =Toplevel()
         self.show_teams_f.title("FM - Squadre del campionato")
         self.show_teams_f.geometry("1000x800")
-        self.show_teams_f.wm_state('zoomed')
+        self.show_teams_f.attributes('-zoomed', True)
         tree = ttk.Treeview(self.show_teams_f, height="30")
         pdf = PdfCreator("Squadre - " + self.lm.league["name"])
  
