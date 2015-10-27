@@ -777,24 +777,43 @@ class FantaManager():
             table_data.append(turn)
 
         pen = []
+        pos = []
+        tot_ord = []
         for m in man:
             p =  self.lm.league["allenatori"][m]["penalita"]
             pen.append(p)
             ind = man.index(m)
             tot[ind] = tot[ind] - p
+            tot_ord.append(tot[ind])
+
+        tot_ord.sort(reverse = True)
+
+        for i in range(len(tot_ord)):
+            p = tot_ord.index(tot[i])
+            pos.append(p + 1)
 
         tree.insert("", 39, "Pen", text = "Penalità", values = pen)
         tree.insert("", 40, "Tot", text = "Totale", values = tot)
+        tree.insert("", 41, "Pos", text = "Posizione", values = pos)
         tots = ["Totale"]
+        
         for t in tot:
             tots.append(str(t))
+            tot_ord.append(t)
 
         pens = ["Penalità"]
         for p in pen:
             pens.append(str(p))
 
+        poss = ["Posizione"]
+
+        for p in pos:
+            poss.append(str(p))
+
         table_data.append(pens)
         table_data.append(tots)
+        table_data.append(poss)
+
         tree.pack()
 
         b = Frame(self.show_class_f)
