@@ -139,7 +139,7 @@ class FantaManager():
         self.check_folders()
         self.main_f = Tk()
         self.main_f.geometry("800x400+200+100")
-        self.main_f.attributes('-zoomed', True)
+        self.main_f.wm_state('zoomed')
         self.main_f.title("FM - Selezione lega")
 
         l = Label(self.main_f, text = "Seleziona la lega che vuoi gestire", font=("Helvetica", 16))
@@ -177,7 +177,7 @@ class FantaManager():
     def home_page(self):
         self.main_f = Tk()
         self.main_f.geometry("800x500+200+100")
-        self.main_f.attributes('-zoomed', True)
+        self.main_f.wm_state('zoomed')
         self.main_f.title("FM - Home Page")
 
         l = Label(self.main_f, text = "Lega in uso : " + self.lm.league["name"], font = ("Helvetica", 16))
@@ -246,7 +246,7 @@ class FantaManager():
 
     def mod_team(self):
         self.mod_team1_f = Toplevel()
-        self.mod_team1_f.attributes('-zoomed', True)
+        self.mod_team1_f.wm_state('zoomed')
         self.mod_team1_f.title("FM - Selezione manager")
 
         l = Label(self.mod_team1_f, text = "Seleziona il manager di cui modificare la squadra", font=("Helvetica", 16))
@@ -357,7 +357,7 @@ class FantaManager():
 
     def insert_form(self):
         self.insert_form1_f = Toplevel()
-        self.insert_form1_f.attributes('-zoomed', True)
+        self.insert_form1_f.wm_state('zoomed')
         self.insert_form1_f.title("FM - Selezione manager")
 
         l = Label(self.insert_form1_f, text = "Seleziona il manager di cui inserire la formazione", font=("Helvetica", 16))
@@ -427,7 +427,7 @@ class FantaManager():
         self.select_turn_f.destroy()
         self.select_mod_f = Toplevel()
         self.select_mod_f.geometry("800x400+200+100")
-        self.select_mod_f.attributes('-zoomed', True)
+        self.select_mod_f.wm_state('zoomed')
         self.select_mod_f.title("FM - Selezione modulo")
 
         l = Label(self.select_mod_f, text = "Seleziona il modulo da utilizzare in questa giornata", font=("Helvetica", 16))
@@ -478,7 +478,7 @@ class FantaManager():
 
         self.insert_players_f = Toplevel()
         self.insert_players_f.title("FM - Inserimento formazione")
-        self.insert_players_f.attributes('-zoomed', True)
+        self.insert_players_f.wm_state('zoomed')
 
         l = Label(self.insert_players_f, text = "Seleziona i titolari di giornata", font=("Helvetica", 14))
         l.pack(fill = X)
@@ -663,7 +663,7 @@ class FantaManager():
         self.show_turn_f =Toplevel()
         self.show_turn_f.title("FM - Risultati giornata " + self.turn_s)
         self.show_turn_f.geometry("1000x800")
-        self.show_turn_f.attributes('-zoomed', True)
+        self.show_turn_f.wm_state('zoomed')
         res_dict = self.lm.calc_turn_score(self.turn_s)
         tree = ttk.Treeview(self.show_turn_f, height="30")
         pdf = PdfCreator("Turno " + self.turn_s + " - " + self.lm.league["name"])
@@ -726,11 +726,18 @@ class FantaManager():
             TurnDownloader(int(self.turn_s)).parse_turn()
             self.show_turn()
 
+        def sei_politico():
+            self.show_turn_f.destroy()
+            self.add_6_politico()
+            
         okB = Button(b, text = "Esporta in PDF", command = export)
         okB.pack(side = RIGHT, pady = (20, 20), padx = (20, 20))
 
         upB = Button(b, text = "Riscarica voti", command = update)
         upB.pack(side = RIGHT, pady = (20, 20), padx = (20, 20))
+
+        spB = Button(b, text = "Aggiungi 6 politico", command = sei_politico)
+        spB.pack(side = RIGHT, pady = (20, 20), padx = (20, 20))
 
         b.pack(side = BOTTOM, fill = X)
         self.set_icon(self.show_turn_f)
@@ -740,7 +747,7 @@ class FantaManager():
         self.show_class_f =Toplevel()
         self.show_class_f.title("FM - Classifica")
         self.show_class_f.geometry("1000x800")
-        self.show_class_f.attributes('-zoomed', True)
+        self.show_class_f.wm_state('zoomed')
         tree = ttk.Treeview(self.show_class_f, height="30")
 
         man = [k for k in self.lm.league["allenatori"].keys()]
@@ -833,7 +840,7 @@ class FantaManager():
 
     def add_penality(self):
         self.add_penality1_f = Toplevel()
-        self.add_penality1_f.attributes('-zoomed', True)
+        self.add_penality1_f.wm_state('zoomed')
         self.add_penality1_f.title("FM - Selezione manager")
 
         l = Label(self.add_penality1_f, text = "Seleziona il manager a cui attribuire una penalità", font=("Helvetica", 16))
@@ -913,7 +920,7 @@ class FantaManager():
         self.show_teams_f =Toplevel()
         self.show_teams_f.title("FM - Squadre del campionato")
         self.show_teams_f.geometry("1000x800")
-        self.show_teams_f.attributes('-zoomed', True)
+        self.show_teams_f.wm_state('zoomed')
         tree = ttk.Treeview(self.show_teams_f, height="30")
         pdf = PdfCreator("Squadre - " + self.lm.league["name"])
  
@@ -986,5 +993,47 @@ class FantaManager():
         if a:
             StatDownloader().parse_stat()
             messagebox.showinfo(title = "FM - Info", message = "Database aggiornato.")
+
+
+    def add_6_politico(self):
+        self.add_6_f = Toplevel()
+        self.add_6_f.wm_state('zoomed')
+        self.add_6_f.title("FM - Selezionare un squadra")
+        
+        l = Label(self.add_6_f, text = "Seleziona la squadra a cui dare 6 politico", font=("Helvetica", 16))
+        l.pack(fill = X, pady = (20, 20))
+
+        teams = ["ATALANTA", "BOLOGNA", "CARPI", "CHIEVO", "EMPOLI", "FIORENTINA", "FROSINONE", "GENOA", "INTER", "JUVENTUS", "LAZIO", "MILAN", "NAPOLI", "PALERMO", "ROMA", "SAMPDORIA", "SASSUOLO", "TORINO", "UDINESE", "VERONA"]
+        self.team = StringVar()
+
+        for t in teams:
+            r = Radiobutton(self.add_6_f, text = t, variable = self.team, value = t)
+            r.pack()
+
+        b = Frame(self.add_6_f)
+
+        exB = Button(b, text = "Esci", command = lambda: self.add_6_f.destroy())
+        exB.pack(side = RIGHT, pady = (20, 20), padx = (5, 10))
+
+        okB = Button(b, text = "OK", command = self.validate_6_politico)
+        okB.pack(side = RIGHT, pady = (20, 20))
+
+        b.pack(side=BOTTOM, fill=X)
+
+        self.set_icon(self.add_6_f)
+        self.add_6_f.mainloop()
+
+
+    def validate_6_politico(self):
+        if str(self.team.get()) == "":
+            messagebox.showwarning(title = "FM - Errore", message = "Nessuna squadra selezionata")
+        else:
+            self.add_6_f.destroy()
+            self.dict_stat  = StatDownloader().load_stat()
+            players         = [str(p) for p in self.dict_stat if self.dict_stat[p]["squadra"] == str(self.team.get())]
+
+            TurnDownloader(int(self.turn_s)).add_6_politico(players)
+            messagebox.showinfo(title = "FM - Info", message = "Aggiunto 6 politico ai giocatori della squadra " + str(self.team.get()) + " per il turno " + self.turn_s)
+            self.show_turn()
 
 FM = FantaManager()

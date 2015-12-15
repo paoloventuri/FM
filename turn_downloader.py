@@ -68,6 +68,23 @@ class TurnDownloader():
 		self.save_turn(turn_dict)
 		return self.turn_dict
 
+	def add_6_politico(self, players):
+		turn_dict = self.turn_dict
+		for p in players:
+			turn_dict[p] = {
+				"voto"					: 0.0,
+				"gol"					: 0,
+				"assist" 				: 0,
+				"rigori segnati/parati" : 0,
+				"rigori sbagliati"		: 0,
+				"autogol"				: 0,
+				"ammonizioni"			: 0,
+				"espulsioni"			: 0,
+				"magic voto"			: 6.0
+			}	
+
+		self.turn_dict = turn_dict
+		self.save_turn(turn_dict)
 
 	def normalize_name(self, name):
 		n = ''.join(ch for ch in name if ch.isalnum() or ch == " ")
