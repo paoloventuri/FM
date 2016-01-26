@@ -65,6 +65,11 @@ class LeagueManager():
 		self.league["allenatori"][manager]["giornate"][turn] = form
 		self.save_league()
 
+	def old_team(self, manager, turn):
+		if turn > 1:
+			form = self.league["allenatori"][manager]["giornate"][str(turn - 1)]
+			self.league["allenatori"][manager]["giornate"][str(turn)] = form
+			self.save_league()
 
 	def control_turn_team(self, turn):
 		for man in self.league["allenatori"].keys():

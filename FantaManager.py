@@ -562,10 +562,19 @@ class FantaManager():
         okB = Button(b, text = "OK", command = self.validate_form)
         okB.pack(side = RIGHT, pady = (20, 20), padx = (20, 20))
 
+        oldB = Button(b, text = "Utilizza formazione precedente", command = self.old_form)
+        oldB.pack(side = RIGHT, pady = (20, 20), padx = (20, 20))
+
         b.pack(side = RIGHT)
         self.set_icon(self.insert_players_f)
         self.insert_players_f.mainloop()
 
+    def old_form(self):
+        a = messagebox.askyesno(title = "FM - Inserimento formazione", message = "Vuoi veramente utilizzare la formazione della giornata " + str(int(self.turn.get()) - 1) + "?")
+        if a:
+            messagebox.showinfo(title = "FM - Info", message = "La formazione di " + self.manager.get() + " per il turno " + self.turn.get() + " è stata inserita")
+            self.insert_players_f.destroy()
+            self.lm.old_team(self.manager.get(), int(self.turn.get()))
 
     def validate_form(self):
         players = self.lm.league["allenatori"][self.manager.get()]["giocatori"]
