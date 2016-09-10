@@ -5,7 +5,7 @@ import json
 
 class StatDownloader():
 	def __init__(self):
-		self.year = "2015-16"
+		self.year = "2016-17"
 
 	def download_stat(self):
 		try:
@@ -40,6 +40,10 @@ class StatDownloader():
 		for i in range(len(names)):
 			if names[i] == "Lopez D" and role[i] == "Portiere":
 				names[i] = "Lopez Diego"
+
+			if names[i] == "Miranda J" and role[i] == "Difensore":
+				names[i] = "Miranda Joao"
+
 			stat[names[i]] = {
 				"squadra"			: teams[i],
 				"ruolo"				: role[i],

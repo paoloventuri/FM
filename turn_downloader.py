@@ -7,7 +7,7 @@ import json, sys, re
 class TurnDownloader():
 	def __init__(self, turn):
 		self.turn = turn
-		self.year = "2015-16"
+		self.year = "2016-17"
 		self.load_turn()
 
 	def download_turn(self):
@@ -46,6 +46,8 @@ class TurnDownloader():
 					role = div.find_all("span", "playerRole show-for-small")
 					if role and self.normalize_name(span[0].text) == "Lopez D" and role[0].text == "P":
 						player_stat.append("Lopez Diego")
+					elif role and self.normalize_name(span[0].text) == "Miranda J" and role[0].text == "D":
+						player_stat.append("Miranda Joao")
 					else:
 						player_stat.append(self.normalize_name(span[0].text))
 			for div in l.find_all("div", "inParameter"):
